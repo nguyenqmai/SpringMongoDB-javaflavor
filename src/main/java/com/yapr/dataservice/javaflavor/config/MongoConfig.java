@@ -16,10 +16,10 @@ import java.util.Collections;
 @EnableMongoRepositories(basePackages = "com.yapr.dataservice.javaflavor")
 public class MongoConfig extends AbstractMongoClientConfiguration {
 
-    @Value("${mongodb.db:}")
+    @Value("${mongodb_db:}")
     private String mongoDbName;
 
-    @Value("${mongodb.connection:}")
+    @Value("${mongodb_connection:}")
     private String mongoDbConnection;
 
     @Override
